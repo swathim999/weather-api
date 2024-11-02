@@ -1,0 +1,97 @@
+.weather {
+  place-self: center;
+  padding: 40px;
+  border-radius: 10px;
+  background-image: linear-gradient(45deg, #2f4680, #500ae4);
+  display: flex;
+  flex-direction: column; /* Stacks everything vertically */
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.search-bar input {
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  padding-left: 25px;
+  color: #626262;
+  background: #ebfffc;
+  font-size: 18px;
+}
+
+.search-bar img {
+  width: 40px;
+  border-radius: 50%;
+  background: #ebfffc;
+  height: 40px;
+  cursor: pointer;
+}
+
+/* Weather Information - Vertically aligned after search bar */
+.weather-info {
+  display: flex;
+  flex-direction: column; /* Ensures icon, temperature, and location stack vertically */
+  align-items: center; /* Center content horizontally */
+  margin-top: 20px; /* Space between search bar and weather info */
+}
+
+.weather-icon {
+  width: 100px; /* Adjust the size as needed */
+  margin: 20px 0;
+}
+
+.temperature {
+  color: #fff;
+  font-size: 60px;
+  line-height: 1;
+}
+
+.location {
+  color: #fff;
+  font-size: 40px;
+  margin-top: 10px; /* Space between temperature and location */
+}
+
+.weather-data {
+  width: 100%;
+  margin-top: 40px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px; /* Space between each weather data column */
+}
+
+.weather-data .col {
+  display: flex;
+  align-items: center; /* Align items in the center vertically */
+  gap: 12px;
+  font-size: 22px;
+}
+
+.weather-data .col img {
+  width: 40px; /* Adjust icon size */
+  height: 40px; /* Match icon height */
+  border-radius: 50%; /* Optional, if you want circular icons */
+}
+
+.weather-data .col div {
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-data .col div p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.weather-data .col div span {
+  display: block;
+  font-size: 14px;
+  color: #ccc; /* Subtle color for labels */
+}
